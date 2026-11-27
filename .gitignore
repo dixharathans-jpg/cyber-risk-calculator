@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+risk_results.txt
+.DS_Store

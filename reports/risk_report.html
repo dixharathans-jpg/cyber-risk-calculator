@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cybersecurity Risk Assessment Report</title>
+<style>
+ * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+ @page { size: A4; margin: 15mm; }
+ tr, figure { break-inside: avoid; }
+ h2 { break-after: avoid; }
+ body { font-family: Arial, Helvetica, sans-serif; background:#e9e9e9; margin:0; color:#222; line-height:1.5; }
+ .page { background:#fff; max-width:900px; margin:24px auto; padding:48px 56px; box-shadow:0 0 6px rgba(0,0,0,.15); }
+ .cover { text-align:center; border-bottom:2px solid #222; padding-bottom:20px; margin-bottom:28px; }
+ .cover h1 { font-family: Georgia, 'Times New Roman', serif; font-size:28px; margin:0 0 6px; letter-spacing:1px; text-transform:uppercase; }
+ .cover .sub { font-size:16px; margin:0 0 16px; color:#444; }
+ .cover table { margin:0 auto; font-size:14px; }
+ .cover td { padding:2px 10px; text-align:left; }
+ h2 { font-family: Georgia, 'Times New Roman', serif; font-size:20px; border-bottom:1px solid #999; padding-bottom:4px; margin-top:36px; }
+ p { font-size:14px; }
+ table.data { width:100%; border-collapse:collapse; font-size:13px; margin:8px 0 4px; }
+ table.data th { background:#eee; border:1px solid #999; padding:6px; text-align:left; }
+ table.data td { border:1px solid #999; padding:6px; vertical-align:top; }
+ table.data small { color:#555; }
+ .c { text-align:center; }
+ .num { white-space:nowrap; }
+ .caption { font-size:12px; font-style:italic; text-align:center; margin:4px 0 16px; }
+ .badge { color:#111; padding:1px 7px; border-radius:3px; font-size:11px; font-weight:bold; white-space:nowrap; }
+ .maps { display:flex; gap:24px; justify-content:center; flex-wrap:wrap; }
+ figure { margin:0; }
+ figcaption { font-size:12px; font-style:italic; text-align:center; margin-top:6px; }
+ table.grid { border-collapse:collapse; }
+ table.grid td { width:62px; height:40px; text-align:center; font-size:11px; font-weight:bold; border:1px solid #fff; }
+ table.grid th.axis { font-size:10px; font-weight:normal; padding:2px 4px; }
+ ul { font-size:14px; }
+ code { background:#f2f2f2; padding:1px 4px; }
+ .footer { text-align:center; font-size:11px; color:#666; margin-top:40px; border-top:1px solid #ccc; padding-top:8px; }
+ @media print {
+   body { background:#fff; }
+   .page { box-shadow:none; margin:0; max-width:none; padding:0; }
+   table.data { font-size:11px; width:99%; }
+   table.grid td { width:50px; height:32px; }
+   h2 { margin-top:24px; }
+ }
+</style></head><body><div class="page">
+
+<div class="cover">
+ <h1>Cybersecurity Risk Assessment Report</h1>
+ <p class="sub">Case study: a fictional university</p>
+ <table>
+  <tr><td><b>Prepared by</b></td><td>Disharathan Shanmugam</td></tr>
+  <tr><td><b>Programme</b></td><td>Bachelor&#x27;s degree in Cybersecurity</td></tr>
+  <tr><td><b>Date</b></td><td>27 November 2026</td></tr>
+  <tr><td><b>Method</b></td><td>NIST SP 800-30 Rev. 1</td></tr>
+  <tr><td><b>Data file</b></td><td>sample_register.csv (7 risks)</td></tr>
+ </table>
+</div>
+
+<h2>1. Executive summary</h2>
+<p>This assessment covers 7 risks. Existing controls reduce the expected yearly loss
+(ALE) from <b>RM 1,002,000</b> to <b>RM 599,300</b>, a reduction of 40%.
+The highest remaining risk is <b>Students Portal</b> (R01), rated
+<b>High</b> after controls.</p>
+<table class="data" style="width:60%;margin:0 auto">
+ <tr><th>Risk level (NIST)</th><th class="c">Before controls</th><th class="c">After controls</th></tr>
+ <tr><td><span class="badge" style="background:#b3261e;color:#fff">Very High</span></td><td class='c'>1</td><td class='c'>0</td></tr><tr><td><span class="badge" style="background:#e8710a;color:#111">High</span></td><td class='c'>3</td><td class='c'>1</td></tr><tr><td><span class="badge" style="background:#f2c94c;color:#111">Moderate</span></td><td class='c'>2</td><td class='c'>5</td></tr><tr><td><span class="badge" style="background:#8bc34a;color:#111">Low</span></td><td class='c'>1</td><td class='c'>0</td></tr><tr><td><span class="badge" style="background:#3c9d5d;color:#fff">Very Low</span></td><td class='c'>0</td><td class='c'>1</td></tr>
+</table>
+<p class="caption">Table 1: Number of risks at each level</p>
+
+<h2>2. Risk heat maps</h2>
+<div class="maps">
+ <figure><table class="grid"><tr><th class="axis">Very High</th><td style="background:#3c9d5d" title="Very Low risk"></td><td style="background:#8bc34a" title="Low risk"></td><td style="background:#f2c94c" title="Moderate risk"></td><td style="background:#e8710a" title="High risk">R01, R03</td><td style="background:#b3261e" title="Very High risk"></td></tr><tr><th class="axis">High</th><td style="background:#3c9d5d" title="Very Low risk"></td><td style="background:#8bc34a" title="Low risk"></td><td style="background:#f2c94c" title="Moderate risk"></td><td style="background:#e8710a" title="High risk"></td><td style="background:#b3261e" title="Very High risk">R02</td></tr><tr><th class="axis">Moderate</th><td style="background:#3c9d5d" title="Very Low risk"></td><td style="background:#8bc34a" title="Low risk"></td><td style="background:#f2c94c" title="Moderate risk">R05</td><td style="background:#f2c94c" title="Moderate risk">R06</td><td style="background:#e8710a" title="High risk">R04</td></tr><tr><th class="axis">Low</th><td style="background:#3c9d5d" title="Very Low risk"></td><td style="background:#8bc34a" title="Low risk"></td><td style="background:#8bc34a" title="Low risk">R07</td><td style="background:#8bc34a" title="Low risk"></td><td style="background:#f2c94c" title="Moderate risk"></td></tr><tr><th class="axis">Very Low</th><td style="background:#3c9d5d" title="Very Low risk"></td><td style="background:#3c9d5d" title="Very Low risk"></td><td style="background:#3c9d5d" title="Very Low risk"></td><td style="background:#8bc34a" title="Low risk"></td><td style="background:#8bc34a" title="Low risk"></td></tr><tr><th class="axis"></th><th class="axis">Very Low</th><th class="axis">Low</th><th class="axis">Moderate</th><th class="axis">High</th><th class="axis">Very High</th></tr></table><figcaption>Figure 1: Inherent risk (before controls)<br><small>Rows: likelihood. Columns: impact.</small></figcaption></figure>
+ <figure><table class="grid"><tr><th class="axis">Very High</th><td style="background:#3c9d5d" title="Very Low risk"></td><td style="background:#8bc34a" title="Low risk"></td><td style="background:#f2c94c" title="Moderate risk"></td><td style="background:#e8710a" title="High risk"></td><td style="background:#b3261e" title="Very High risk"></td></tr><tr><th class="axis">High</th><td style="background:#3c9d5d" title="Very Low risk"></td><td style="background:#8bc34a" title="Low risk"></td><td style="background:#f2c94c" title="Moderate risk"></td><td style="background:#e8710a" title="High risk">R01</td><td style="background:#b3261e" title="Very High risk"></td></tr><tr><th class="axis">Moderate</th><td style="background:#3c9d5d" title="Very Low risk"></td><td style="background:#8bc34a" title="Low risk"></td><td style="background:#f2c94c" title="Moderate risk">R05</td><td style="background:#f2c94c" title="Moderate risk">R03, R06</td><td style="background:#e8710a" title="High risk"></td></tr><tr><th class="axis">Low</th><td style="background:#3c9d5d" title="Very Low risk"></td><td style="background:#8bc34a" title="Low risk"></td><td style="background:#8bc34a" title="Low risk"></td><td style="background:#8bc34a" title="Low risk"></td><td style="background:#f2c94c" title="Moderate risk">R02, R04</td></tr><tr><th class="axis">Very Low</th><td style="background:#3c9d5d" title="Very Low risk"></td><td style="background:#3c9d5d" title="Very Low risk"></td><td style="background:#3c9d5d" title="Very Low risk">R07</td><td style="background:#8bc34a" title="Low risk"></td><td style="background:#8bc34a" title="Low risk"></td></tr><tr><th class="axis"></th><th class="axis">Very Low</th><th class="axis">Low</th><th class="axis">Moderate</th><th class="axis">High</th><th class="axis">Very High</th></tr></table><figcaption>Figure 2: Residual risk (after controls)<br><small>Rows: likelihood. Columns: impact.</small></figcaption></figure>
+</div>
+
+<h2>3. Risk register</h2>
+<table class="data">
+<tr><th>#</th><th>ID</th><th>Asset</th><th>Threat</th><th>Existing control</th>
+<th>Inherent</th><th>Residual</th><th>ALE / year</th></tr>
+<tr><td class='c'>1</td><td>R01</td><td><b>Students Portal</b><br><small>Access Control</small></td><td>Credential stuffing / brute-force login<br><small>Vulnerability: No MFA and no account lockout</small></td><td>Basic password policy<br><small>20% effective</small></td><td class='c'><span class="badge" style="background:#e8710a;color:#111">High</span></td><td class='c'><span class="badge" style="background:#e8710a;color:#111">High</span></td><td class='num'>RM 300,000<br><small>after: RM 240,000</small></td></tr><tr><td class='c'>2</td><td>R03</td><td><b>Staff Email (Microsoft 365)</b><br><small>Human Factor</small></td><td>Phishing leading to account takeover<br><small>Vulnerability: Users not trained to spot phishing</small></td><td>Email filtering<br><small>40% effective</small></td><td class='c'><span class="badge" style="background:#e8710a;color:#111">High</span></td><td class='c'><span class="badge" style="background:#f2c94c;color:#111">Moderate</span></td><td class='num'>RM 225,000<br><small>after: RM 135,000</small></td></tr><tr><td class='c'>3</td><td>R06</td><td><b>STUDENT EPAYMENT SYSTEM</b><br><small>Availability</small></td><td>DDoS attack<br><small>Vulnerability: No CDN or rate limiting</small></td><td>Hosting provider basic protection<br><small>30% effective</small></td><td class='c'><span class="badge" style="background:#f2c94c;color:#111">Moderate</span></td><td class='c'><span class="badge" style="background:#f2c94c;color:#111">Moderate</span></td><td class='num'>RM 15,000<br><small>after: RM 10,500</small></td></tr><tr><td class='c'>4</td><td>R04</td><td><b>File Server (Research Data)</b><br><small>Malware</small></td><td>Ransomware<br><small>Vulnerability: Unpatched Windows Server and flat network</small></td><td>Antivirus + weekly offline backup<br><small>50% effective</small></td><td class='c'><span class="badge" style="background:#e8710a;color:#111">High</span></td><td class='c'><span class="badge" style="background:#f2c94c;color:#111">Moderate</span></td><td class='num'>RM 216,000<br><small>after: RM 108,000</small></td></tr><tr><td class='c'>5</td><td>R02</td><td><b>Examination Results Database</b><br><small>Application Security</small></td><td>SQL injection<br><small>Vulnerability: Unvalidated input in legacy PHP form</small></td><td>Web application firewall (WAF)<br><small>60% effective</small></td><td class='c'><span class="badge" style="background:#b3261e;color:#fff">Very High</span></td><td class='c'><span class="badge" style="background:#f2c94c;color:#111">Moderate</span></td><td class='num'>RM 200,000<br><small>after: RM 80,000</small></td></tr><tr><td class='c'>6</td><td>R05</td><td><b>Campus Wi-Fi</b><br><small>Network Security</small></td><td>Rogue access point / evil twin<br><small>Vulnerability: Open guest SSID with no client isolation</small></td><td>Wireless IDS<br><small>30% effective</small></td><td class='c'><span class="badge" style="background:#f2c94c;color:#111">Moderate</span></td><td class='c'><span class="badge" style="background:#f2c94c;color:#111">Moderate</span></td><td class='num'>RM 30,000<br><small>after: RM 21,000</small></td></tr><tr><td class='c'>7</td><td>R07</td><td><b>Lab Workstations</b><br><small>Endpoint Security</small></td><td>USB malware infection<br><small>Vulnerability: USB ports unrestricted</small></td><td>Endpoint protection (EDR)<br><small>70% effective</small></td><td class='c'><span class="badge" style="background:#8bc34a;color:#111">Low</span></td><td class='c'><span class="badge" style="background:#3c9d5d;color:#fff">Very Low</span></td><td class='num'>RM 16,000<br><small>after: RM 4,800</small></td></tr>
+</table>
+<p class="caption">Table 2: Risk register, highest residual risk first</p>
+
+<h2>4. Suggested risk responses</h2>
+<p>Responses use the five risk response types in NIST SP 800-39 (accept, avoid, mitigate, share,
+transfer). Level meanings follow NIST SP 800-30 Table I-3. The final choice depends on the
+organisation's risk tolerance.</p>
+<table class="data">
+<tr><th>ID</th><th>Asset</th><th>Residual</th><th>Suggested response</th><th>Owner</th></tr>
+<tr><td>R01</td><td>Students Portal</td><td class='c'><span class="badge" style="background:#e8710a;color:#111">High</span></td><td>Mitigate: add or improve controls to reduce the risk.<br><small>Could have a severe or catastrophic adverse effect.</small></td><td>IT Security Team</td></tr><tr><td>R03</td><td>Staff Email (Microsoft 365)</td><td class='c'><span class="badge" style="background:#f2c94c;color:#111">Moderate</span></td><td>Mitigate, or share/transfer (e.g. outsourcing, insurance).<br><small>Could have a serious adverse effect.</small></td><td>IT Security Team</td></tr><tr><td>R06</td><td>STUDENT EPAYMENT SYSTEM</td><td class='c'><span class="badge" style="background:#f2c94c;color:#111">Moderate</span></td><td>Mitigate, or share/transfer (e.g. outsourcing, insurance).<br><small>Could have a serious adverse effect.</small></td><td>Web Team</td></tr><tr><td>R04</td><td>File Server (Research Data)</td><td class='c'><span class="badge" style="background:#f2c94c;color:#111">Moderate</span></td><td>Mitigate, or share/transfer (e.g. outsourcing, insurance).<br><small>Could have a serious adverse effect.</small></td><td>Infrastructure Team</td></tr><tr><td>R02</td><td>Examination Results Database</td><td class='c'><span class="badge" style="background:#f2c94c;color:#111">Moderate</span></td><td>Mitigate, or share/transfer (e.g. outsourcing, insurance).<br><small>Could have a serious adverse effect.</small></td><td>Application Owner</td></tr><tr><td>R05</td><td>Campus Wi-Fi</td><td class='c'><span class="badge" style="background:#f2c94c;color:#111">Moderate</span></td><td>Mitigate, or share/transfer (e.g. outsourcing, insurance).<br><small>Could have a serious adverse effect.</small></td><td>Network Team</td></tr><tr><td>R07</td><td>Lab Workstations</td><td class='c'><span class="badge" style="background:#3c9d5d;color:#fff">Very Low</span></td><td>Accept and monitor.<br><small>Could have a negligible adverse effect.</small></td><td>Lab Administrator</td></tr>
+</table>
+<p class="caption">Table 3: Suggested response for each risk</p>
+
+<h2>5. Methodology</h2>
+<ul>
+ <li>Likelihood and impact are rated on the NIST scale: 1 Very Low, 2 Low, 3 Moderate, 4 High, 5 Very High.</li>
+ <li>Impact is the highest of the Confidentiality, Integrity and Availability ratings.</li>
+ <li>The risk level is looked up in NIST SP 800-30 Table I-2 (likelihood and impact combined).</li>
+ <li>Residual likelihood = <code>ceil(likelihood x (1 - control effectiveness))</code>, minimum 1.</li>
+ <li>Yearly loss: <code>SLE = asset value x exposure factor</code>, <code>ALE = SLE x ARO</code>,
+     ALE after controls = ALE x (1 - control effectiveness).</li>
+ <li>All ratings and values are estimates for a fictional case study.</li>
+</ul>
+
+<h2>6. References</h2>
+<ul>
+ <li>NIST (2012). SP 800-30 Rev. 1, <i>Guide for Conducting Risk Assessments</i>.</li>
+ <li>NIST (2011). SP 800-39, <i>Managing Information Security Risk</i>.</li>
+ <li>ISO/IEC 27005:2022, <i>Guidance on managing information security risks</i>.</li>
+</ul>
+
+<div class="footer">Cybersecurity Risk Assessment Report &middot; Disharathan Shanmugam</div>
+</div></body></html>

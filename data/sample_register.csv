@@ -1,0 +1,8 @@
+id,asset,threat,vulnerability,category,likelihood,confidentiality,integrity,availability,existing_control,control_effectiveness,asset_value,exposure_factor,aro,control_cost,owner
+R01,Students Portal ,Credential stuffing / brute-force login,No MFA and no account lockout,Access Control,5,4,3,3,Basic password policy,20,500000,30,2,15000,IT Security Team
+R02,Examination Results Database,SQL injection,Unvalidated input in legacy PHP form,Application Security,4,5,5,3,Web application firewall (WAF),60,800000,50,0.5,25000,Application Owner
+R03,Staff Email (Microsoft 365),Phishing leading to account takeover,Users not trained to spot phishing,Human Factor,5,4,3,2,Email filtering,40,300000,25,3,8000,IT Security Team
+R04,File Server (Research Data),Ransomware,Unpatched Windows Server and flat network,Malware,3,4,5,5,Antivirus + weekly offline backup,50,1200000,60,0.3,40000,Infrastructure Team
+R05,Campus Wi-Fi,Rogue access point / evil twin,Open guest SSID with no client isolation,Network Security,3,3,2,2,Wireless IDS,30,150000,20,1,12000,Network Team
+R06,STUDENT EPAYMENT SYSTEM,DDoS attack,No CDN or rate limiting,Availability,3,1,2,4,Hosting provider basic protection,30,100000,15,1,6000,Web Team
+R07,Lab Workstations,USB malware infection,USB ports unrestricted,Endpoint Security,2,2,2,3,Endpoint protection (EDR),70,80000,10,2,5000,Lab Administrator
