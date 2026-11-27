@@ -3,6 +3,7 @@
 A Python tool that reads a cybersecurity **risk register** (CSV file) and creates a
 **risk assessment report** with heat maps, before/after-control risk scores and the
 estimated yearly loss for each risk.
+📄 Full project write-up: [Project_Report.pdf](Project_Report.pdf)
 
 I built this as a student project to practise risk assessment, the first step in
 deciding what a security team should protect first.
